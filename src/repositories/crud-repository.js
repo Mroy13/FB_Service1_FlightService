@@ -44,7 +44,7 @@ class crudRepository {
                 id: id
             }
         });
-
+console.log(response);
         if (!response) {
             throw new Apperror("not able to find resource", StatusCode.NOT_FOUND);
         }
