@@ -1,9 +1,9 @@
 const {Airplane}=require('../models');
 const crudRepository=require('./crud-repository');
-class movieRepository extends crudRepository{
+class airplaneRepository extends crudRepository{
     constructor(){
         super(Airplane);
     }
 }
 
-module.exports=movieRepository;
+module.exports=airplaneRepository;
