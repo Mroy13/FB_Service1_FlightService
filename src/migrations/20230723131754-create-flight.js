@@ -17,7 +17,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull:false,
         references:{
-          model:'Airplanes',//Airplane also worrk
+          model:'Airplanes',//Airplane also work
           key:'id'
         },
         onDelete:'CASCADE'
@@ -26,7 +26,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull:false,
         references:{
-          model:'Airports',//Airport also worrk
+          model:'Airports',//Airport also work
           key:'code'
         },
         onDelete:'CASCADE'
