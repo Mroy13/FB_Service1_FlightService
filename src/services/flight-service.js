@@ -88,6 +88,7 @@ async function getAllflights(query) {
         return response;
     }
     catch (error) {
+        console.log(error);
         throw new Apperror("request not resolved due to server side probelem", StatusCode.INTERNAL_SERVER_ERROR);
     }
 }
