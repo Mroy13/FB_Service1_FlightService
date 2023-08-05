@@ -6,6 +6,7 @@ const router=express.Router();
 //router.get('/movieslist',movieControler.getMovie(req,res));
 router.post('/',FlightMiddlewares.validateCreateRequest,FlightController.createFlight);
 router.get('/',FlightController.getAllflights);
+router.get('/:id',FlightController.getFlight);
 //router.get('/:id',AirplaneController.getAirplane);
 //router.delete('/:id',AirplaneController.destroyAirplane);//patch
 //router.put('/:id',AirplaneController.updateAirplane);

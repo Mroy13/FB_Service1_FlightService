@@ -88,12 +88,22 @@ async function getAllflights(query) {
         return response;
     }
     catch (error) {
-        console.log(error);
+       // console.log(error);
+        throw new Apperror("request not resolved due to server side probelem", StatusCode.INTERNAL_SERVER_ERROR);
+    }
+}
+async function getFlight(data){
+    try{
+        const response=FlightRepository.get(data);
+        return response;
+    }
+    catch(error){
         throw new Apperror("request not resolved due to server side probelem", StatusCode.INTERNAL_SERVER_ERROR);
     }
 }
 module.exports = {
     createFlight,
-    getAllflights
+    getAllflights,
+    getFlight
 
 }
