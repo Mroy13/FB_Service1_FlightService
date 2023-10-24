@@ -1,5 +1,10 @@
-This is a base node js project template, which anyone can use as it has been prepared, by keeping some of the most important code principles and project management recommendations. Feel free to change anything. 
+The FlightService microservice is a pivotal component of my Flight Booking System project. Developed using Node.js, Express.js, MySQL, and Sequelize, it empowers you with essential features and functionalities for managing and booking flights. This README serves as your gateway to understanding the core components of FlightService:
 
+- Technology Stack: Node.js,Express.js,MySql,ORM(sequelize)
+
+- Key Data Models: With four essential data models—Airplane, Airport, Flight, City, and Seat—FlightService enables comprehensive flight management.
+
+- API Endpoints: A rich collection of API endpoints facilitates seamless interaction with end-users, spanning flight management, booking, airport and airplane details, and city information.
 
 `src` -> Inside the src folder all the actual source code regarding the project will reside, this will not include any kind of tests. (You might want to make separate tests folder)
 
@@ -21,7 +26,7 @@ Lets take a look inside the `src` folder
 
 ### Setup the project
 
- - Download this template from github and open it in your favourite text editor. 
+ - Download or clone this project from github and open it in your favourite text editor. 
  - Go inside the folder path and execute the following command:
   ```
   npm install
@@ -42,7 +47,15 @@ Lets take a look inside the `src` folder
  - If you're setting up your development environment, then write the username of your db, password of your db and in dialect mention whatever db you are using for ex: mysql, mariadb etc
  - If you're setting up test or prod environment, make sure you also replace the host with the hosted db url.
 
+- To get database schemas(table here) go inside the `src` folder and execute the following command:
+    ```
+      npx sequelize db:migrate
+      or
+      npx sequelize-cli db:migrate
+    ```
  - To run the server execute
  ```
- node --watch src/index.js
+ npm start
  ```
+
+ 
